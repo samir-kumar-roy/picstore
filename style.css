@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.hero {
+    background-image: url("./bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+header {
+    height: 80px;
+
+}
+
+header .logo {
+    padding-top: 20px;
+}
+
+header .logo a {
+    padding: 5px 20px;
+    text-transform: uppercase;
+    color: rgb(10, 184, 132);
+    font-size: 3.15rem;
+    font-weight: 700;
+
+}
+
+.search {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.search h1 {
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.search>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.search #search-term {
+    box-shadow: -1px 2px 5px -1px rgba(0, 0, 0, 1);
+    border: 1px solid rgb(205, 205, 205);
+    width: 350px;
+    height: 31px;
+    outline: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: rgb(161, 160, 160);
+}
+
+.search #search-btn {
+    background-color: #fff;
+    border: none;
+    outline: 1px solid rgb(205, 205, 205);
+    padding: 3px 15px;
+    cursor: pointer;
+    box-shadow: -1px 2px 5px -1px rgba(0, 0, 0, 1);
+    margin-left: 4px;
+}
+
+.search #search-btn i {
+    color: rgb(126, 126, 126);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#gallery,
+#seached-photos-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-image {
+    width: 32%;
+    box-shadow: -1px 2px 12px -3px rgba(0, 0, 0, 1);
+    padding: 2%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+
+}
+
+.gallery-image>img {
+    width: 98%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s;
+}
+
+.gallery-image>img:hover {
+    padding-left: 5px;
+    padding-top: 8px;
+    cursor: pointer;
+    transform: scale(1.17);
+}
+
+.gallery-image>div {
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.gallery-image>div p span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.gallery-image>div>a {
+    margin-top: 12px;
+
+
+}
+
+.gallery-image>div a {
+    color: rgb(10, 184, 132);
+    padding: 2px 10px;
+    transition: all 0.5s;
+}
+
+.gallery-image>div a:hover {
+    background-color: rgb(224, 224, 224);
+}
